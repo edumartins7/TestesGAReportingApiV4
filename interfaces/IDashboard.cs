@@ -3,5 +3,7 @@ using Google.Apis.AnalyticsReporting.v4.Data;
 
 public interface IDashboard
 {
-    IEnumerable<GetReportsResponse> GetResponses();
+    IEnumerable<object> Requests { get; set; }
+    IEnumerable<GetReportsResponse> Consultar();
+
 }
